@@ -6,7 +6,12 @@ package _04_tea_maker;
 
 public class TeaMaker {
 	/* Figure out how to make a cup of tea in this runner class, using the other classes below */
+	String flavor = TeaBag.GREEN;
+	TeaBag teabag = new TeaBag(flavor);
 	
+	Kettle kettle = new Kettle();
+	
+	Cup cup = new Cup();
 }
 
 class TeaBag {
@@ -55,7 +60,7 @@ class Cup {
 
 	private TeaBag teabag;
 
-	void makeTea(TeaBag teabag, Kettle.Water hotWater) {
+	public void makeTea(TeaBag teabag, Kettle.Water hotWater) {
 		this.teabag = teabag;
 		if (hotWater.isHot())
 			System.out.println("Making hot " + teabag.getFlavor() + " tea.");

@@ -15,5 +15,6 @@ public class SeaCreatureRunner {
 		Patrick.getName();
 		Patrick.eat();
 		Patrick.laugh();
+
 	}
 }
